@@ -1,0 +1,194 @@
+/* Reset básico de margens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cores do tema: Verde natureza e Marrom terra */
+body {
+    background-color: #f4f9f4; /* Fundo verde bem claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c5e1a; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-bottom: 5px solid #8b5a2b; /* Linha marrom */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.intro h2 {
+    color: #2c5e1a;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Seção de Pilares (Cards) */
+.pilares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-top: 4px solid #6b8e23; /* Verde oliva */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #8b5a2b; /* Marrom */
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Seção de Números (Destaque visual) */
+.numeros-banner {
+    background-color: #2c5e1a;
+    color: white;
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    box-shadow: 0 6px 15px rgba(44, 94, 26, 0.3);
+}
+
+.numeros-banner h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #f4f9f4;
+}
+
+.grid-numeros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.numero-item h4 {
+    font-size: 3rem;
+    color: #6b8e23; /* Verde mais claro para contraste no fundo escuro */
+    margin-bottom: 0.5rem;
+}
+
+.numero-item p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Seção Detalhes e ESG */
+.detalhes {
+    background-color: white;
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+}
+
+.detalhes h2 {
+    color: #2c5e1a;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #6b8e23;
+    padding-bottom: 0.5rem;
+}
+
+.detalhes p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.info-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+/* Regra para telas de celular */
+@media (max-width: 768px) {
+    .info-block {
+        grid-template-columns: 1fr;
+    }
+}
+
+.esg-box {
+    background-color: #fcfcfc;
+    border-left: 5px solid #8b5a2b;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.esg-box h4 {
+    color: #2c5e1a;
+    margin-bottom: 0.5rem;
+}
+
+.lista-sustentavel {
+    list-style-type: none;
+}
+
+.lista-sustentavel li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    font-size: 1.05rem;
+}
+
+.lista-sustentavel li::before {
+    content: "🌱"; /* Ícone de planta antes de cada item */
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+footer span {
+    color: #6b8e23;
+    font-weight: bold;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte e Sustentável</title>
+    <style>
+        /* Reset básico de margens */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Cores do tema: Verde natureza e Marrom terra */
+        body {
+            background-color: #f4f9f4; /* Fundo verde bem claro */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c5e1a; /* Verde escuro */
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            border-bottom: 5px solid #8b5a2b; /* Linha marrom */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .intro h2 {
+            color: #2c5e1a;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Seção de Pilares (Cards) */
+        .pilares {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            width: 320px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            border-top: 4px solid #6b8e23; /* Verde oliva */
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #8b5a2b; /* Marrom */
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        /* Seção de Números (Destaque visual) */
+        .numeros-banner {
+            background-color: #2c5e1a;
+            color: white;
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            box-shadow: 0 6px 15px rgba(44, 94, 26, 0.3);
+        }
+
+        .numeros-banner h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #f4f9f4;
+        }
+
+        .grid-numeros {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 2rem;
+        }
+
+        .numero-item h4 {
+            font-size: 3rem;
+            color: #6b8e23; /* Verde mais claro para contraste no fundo escuro */
+            margin-bottom: 0.5rem;
+        }
+
+        .numero-item p {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        /* Seção Detalhes e ESG */
+        .detalhes {
+            background-color: white;
+            border-radius: 8px;
+            padding: 3rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            margin-bottom: 3rem;
+        }
+
+        .detalhes h2 {
+            color: #2c5e1a;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #6b8e23;
+            padding-bottom: 0.5rem;
+        }
+
+        .detalhes p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            font-size: 1.1rem;
+        }
+
+        .info-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .info-block {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .esg-box {
+            background-color: #fcfcfc;
+            border-left: 5px solid #8b5a2b;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .esg-box h4 {
+            color: #2c5e1a;
+            margin-bottom: 0.5rem;
+        }
+
+        .lista-sustentavel {
+            list-style-type: none;
+        }
+
+        .lista-sustentavel li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        .lista-sustentavel li::before {
+            content: "🌱"; /* Trocado para um ícone de planta */
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer span {
+            color: #6b8e23;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agro Forte e Sustentável</h1>
+        <p>Produzindo o futuro respeitando a natureza de hoje.</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>O Equilíbrio Perfeito</h2>
+            <p>O agronegócio moderno prova que é possível aliar alta produtividade com a conservação do meio ambiente. Através de tecnologia de ponta, ciência e práticas conscientes, o campo se desenvolve de maneira forte, rentável e sustentável para garantir a segurança alimentar global.</p>
+        </section>
+
+        <section class="numeros-banner">
+            <h2>O Tamanho do Nosso Impacto</h2>
+            <div class="grid-numeros">
+                <div class="numero-item">
+                    <h4>~25%</h4>
+                    <p>Participação no PIB Nacional</p>
+                </div>
+                <div class="numero-item">
+                    <h4>66%</h4>
+                    <p>Do território nacional preservado</p>
+                </div>
+                <div class="numero-item">
+                    <h4>+19 Milhões</h4>
+                    <p>De empregos gerados na cadeia</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pilares">
+            <div class="card">
+                <h3>Tecnologia e AgTechs</h3>
+                <p>Uso massivo da Internet das Coisas (IoT), inteligência artificial, drones e sensores climáticos para evitar o desperdício de água e insumos, prevendo safras com exatidão.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Bioeconomia Circular</h3>
+                <p>Aproveitamento de resíduos das lavouras e da pecuária para a geração de bioenergia (como o biogás) e fertilizantes orgânicos, fechando o ciclo produtivo sem poluir.</p>
+            </div>
+
+            <div class="card">
+                <h3>Desenvolvimento Social</h3>
+                <p>Fortalecimento das comunidades rurais com educação no campo, inclusão digital e a agricultura familiar trabalhando como fornecedora estratégica ao lado de grandes indústrias.</p>
+            </div>
+        </section>
+
+        <section class="detalhes">
+            <h2>A Prática do ESG no Agronegócio</h2>
+            <p>O mercado global agora exige responsabilidade, e o agro brasileiro respondeu implementando o conceito <strong>ESG</strong> (Environmental, Social, and Governance - Ambiental, Social e Governança). Isso significa que o lucro só faz sentido se vier acompanhado de ética, respeito humano e cuidado com o planeta.</p>
+            
+            <p>Com programas rigorosos de certificação, os produtores garantem que seus produtos vêm de áreas livres de desmatamento ilegal e que suas operações respeitam todas as diretrizes de trabalho digno.</p>
+
+            <div class="info-block">
+                <div>
+                    <h3>Os Três Pilares da Prática</h3>
+                    <div class="esg-box">
+                        <h4>Environmental (Ambiental)</h4>
+                        <p>Foco em agricultura de baixo carbono, recuperação de pastagens degradadas, Integração Lavoura-Pecuária-Floresta (ILPF) e proteção rigorosa de nascentes e matas ciliares.</p>
+                    </div>
+                    <div class="esg-box">
+                        <h4>Social (Social)</h4>
+                        <p>Garantia de segurança e saúde no trabalho rural, capacitação contínua da mão de obra frente às novas tecnologias e incentivo à permanência dos jovens no campo com qualidade de vida.</p>
+                    </div>
+                    <div class="esg-box">
+                        <h4>Governance (Governança)</h4>
+                        <p>Transparência total na cadeia produtiva, com auditorias, rastreabilidade via blockchain do alimento desde o plantio até o supermercado e combate rigoroso à corrupção.</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>O que o Futuro nos Reserva?</h3>
+                    <ul class="lista-sustentavel">
+                        <li><strong>Biodefensivos:</strong> Substituição gradativa de químicos por controladores naturais de pragas (fungos, bactérias e insetos benéficos).</li>
+                        <li><strong>Edição Genética:</strong> Sementes mais resistentes às secas extremas causadas pelas mudanças climáticas.</li>
+                        <li><strong>Fazendas Verticais:</strong> Produção urbana para encurtar a distância entre a colheita e a mesa.</li>
+                        <li><strong>Créditos de Carbono:</strong> Produtores sendo remunerados financeiramente por preservar a floresta em pé e capturar CO2 no solo.</li>
+                        <li><strong>Gestão de Água:</strong> Irrigação inteligente gota-a-gota comandada por satélites para uso milimétrico dos recursos hídricos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto <span>Agro Forte</span>. Desenvolvido para inspirar o futuro do campo.</p>
+    </footer>
+
+</body>
+</html>
